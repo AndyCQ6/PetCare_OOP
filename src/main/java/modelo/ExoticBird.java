@@ -1,4 +1,4 @@
-package Modelo;
+package modelo;
 
 public class ExoticBird extends Pet {
     private int wingsLenght;

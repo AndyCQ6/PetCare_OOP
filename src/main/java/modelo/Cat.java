@@ -1,4 +1,4 @@
-package Modelo;
+package modelo;
 
 public class Cat extends Pet{
     private boolean isDomestic;

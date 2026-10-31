@@ -1,4 +1,4 @@
-package Modelo;
+package modelo;
 
 public class Receptionist extends Person {
     private String shift;

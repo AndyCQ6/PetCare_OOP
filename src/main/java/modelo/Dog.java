@@ -1,4 +1,4 @@
-package Modelo;
+package modelo;
 
 public class Dog extends Pet {
     private String breed;

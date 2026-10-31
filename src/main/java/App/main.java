@@ -1,13 +1,17 @@
 package App;
 
-import Modelo.Person;
-import Modelo.Receptionist;
+import modelo.Person;
+import modelo.Veterinarian;
+import modelo.Receptionist;
 
 import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        Person 
+        Person vet1 = new Veterinarian("Derek Alexander", "Rodriguez", "921 291 6736", "dotecap2007@gmail.com", "12345678", "Surgery");
+        Person vet2 = new Veterinarian("Luis Donaldo", "Mijangos", "921 409 1976", "luisdona17@gmail.com", "87654321", "Oncology");
+        Person vet3 = new Veterinarian("Jonathan", "Cruz", "921 111 3832", "golddigger@gmail.com", "00000001", "Oncology");
+
         Scanner scanner = new Scanner(System.in);
         int option;
         option = scanner.nextInt();
@@ -28,14 +32,17 @@ public class main {
 
             switch (option) {
                 case 1:
+                    System.out.println("=== Register owner ===\n");
                     System.out.println("Enter owner name: ");
                     String name = scanner.next();
                     System.out.println("Enter last name: ");
                     String lastName = scanner.next();
                     System.out.println("Enter phone number: ");
-                    int phoneNumber = scanner.nextInt();
+                    String phoneNumber = scanner.next();
                     System.out.println("Enter email: ");
                     String email = scanner.next();
+                    System.out.println("Enter address: ");
+                    String address = scanner.next();
                     Receptionist.addOwnerPet();
                     break;
                 case 2:
