@@ -7,4 +7,13 @@ public class Receptionist extends Person {
         super(name, lasName, phoneNumber, email);
         this.shift = shift;
     }
+
+    public  String getShift() {
+        return shift;
+    }
+    public void setShift(String shift) {}
+
+    public static void addOwnerPet(){
+        System.out.println("Pendiente");
+    }
 }
